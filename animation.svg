@@ -1,0 +1,9 @@
+<svg width="422" height="249" viewBox="0 0 422 249" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 1">
+<rect width="422" height="249" fill="transparent"/>
+<path id="Rectangle 1" d="M0 18C0 8.05887 8.05888 0 18 0H422V36H18C8.05888 36 0 27.9411 0 18V18Z" fill="#3184F3"/>
+<path id="Rectangle 2" d="M90 75.5C90 64.1782 99.1782 55 110.5 55H422V96H110.5C99.1782 96 90 86.8218 90 75.5V75.5Z" fill="black"/>
+<path id="Rectangle 3" d="M38 134.5C38 123.73 46.7304 115 57.5 115H422V154H57.5C46.7304 154 38 145.27 38 134.5V134.5Z" fill="#3184F3"/>
+<path id="Rectangle 4" d="M211 201C211 191.059 219.059 183 229 183H422V219H229C219.059 219 211 210.941 211 201V201Z" fill="black"/>
+</g>
+</svg>

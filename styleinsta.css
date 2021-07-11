@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --black:#171717;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    height: 12vh;
+    background-color: whitesmoke;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    position: fixed;
+    z-index: 1000;
+}
+.navbar .logo{
+        color: brown;
+        font-size: 28px;
+        font-weight: 600;
+}
+.navbar .navlinks ul{
+           width: 80px;
+           color: rgb(68, 23, 172);
+           display: flex;
+           justify-content: space-between;
+           list-style-type: none;
+           font-weight: 600;
+}
+.navbar .navlinks{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .navlinks .navlink:hover{
+    color: var(--black);
+}
+.mainline{
+    height: 88vh;
+    width:100%;
+    background-image: url(https://images.unsplash.com/photo-1494783367193-149034c05e8f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.mainline .overlay{
+    height: 88vh;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items:left;
+    flex-direction: column;
+}
+.mainline .overlay .title{
+    color: whitesmoke;
+    font-size: 36px;
+    font-weight: 1000;
+    margin-left: 15px;
+}
+.mainline .overlay .text{
+    color: rgb(253, 253, 253);
+    font-size:25px;
+    font-weight: 650;
+    margin-left: 15px;
+}
+.mainline .overlay .button{
+    color: white;
+    margin-top: 20px;
+}
+.button{
+     background-color: transparent;
+     padding: 12px 28px;
+     border-radius: 5px;
+     font-weight: 800;
+     font-size: 20px;
+     margin-right: 1340px;
+     outline: white solid;
+     margin-left: 10px;
+     transform: translateY(4px);
+     
+}
+.button:hover{
+   background-color: brown;
+    transform: scale(1.022);
+}
+.about .cardRow{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .cardRow .card{
+    box-shadow: 0px 0px 6px;
+    outline:  rgb(43, 199, 226);
+    margin: 8px;
+    padding: 20px;
+    border-radius: 4px;
+    transition: 0.3s ease-in-out;
+}
+.about .cardRow .card .cardIcon{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.about .cardRow .card .cardTitle{
+    font-size: 600;
+    font-size: 20px;
+    text-align: center;
+}
+.about .cardRow .card .cardContent{
+    font-size:15px;
+    font-weight:500;
+    text-align: center;
+}
+.about .title{
+    font-weight: 800;
+    font-size: 30px;
+    color: rgb(42, 176, 230);
+    text-align: left;
+}
+.about .cardRow .card:hover{
+    transform: scale(1.034);
+}
+.about .cardRow .card:hover .cardIcon{
+      color: brown;
+      animation: bounce 1s linear infinite;
+      
+}
+.about .cardRow .card:hover .cardIcon.c{
+    animation: bounce 1s linear infinite;
+    position: relative;
+}
+.about .cardRow .card:hover .cardIcon.h{
+    animation: Bounce 1s linear infinite;
+}
+.about .cardRow .card:hover .cardIcon.d{
+    animation: spin 1s linear infinite;
+}
+@keyframes bounce{
+    0% {
+        transform: translateY(0%);
+        color: blueviolet;
+    }
+    50%{
+        transform: translateY(-50%);
+        color: chartreuse;
+    }    
+    100% {
+        transform: translateY(0%);
+        color: cornflowerblue;
+    }
+}
+@keyframes Bounce{
+    0% {
+        transform: translateY(0%);
+        color: cyan;
+    }
+    50%{
+        transform: translateY(-50%);
+        color:yellow;
+    }    
+    100% {
+        transform: translateY(0%);
+        color: green;
+    }
+}
+@keyframes spin{
+    from{
+        transform: rotateZ(0deg);
+        color: gold;
+    }
+    to{
+        transform: rotateZ(360deg);
+        color: silver;
+    }
+}
+
+.donation{
+    height: 98vh;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1542627088-6603b66e5c54?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.donaton .overlay{
+    height: 98vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.donation .overlay .dTitle{
+    color: rgb(42, 176, 230);
+    font-size: 40px;
+    font-weight: 1000;
+    text-align: left;
+}
+.donation .overlay .dText{
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+}
+.money .overlay{
+    height: 98vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.money .overlay .mTitle{
+    color: var(--black);
+    font-size: 30px;
+    font-weight: 800;
+    margin-left: 10px;
+}
+.money .card{
+    box-shadow: 0px 0px 6px  4px white;
+    margin: 35px;
+    padding: 35px;
+    font-size: 23px;
+    font-weight: 600;
+    margin-right: 880px;
+    border-radius: 20px;
+}
+.money .card .mform{
+    color: honeydew;
+    font-size: 25px;
+    font-weight: 600;
+}
+.money .card .mTitle{ 
+    color: rgb(42, 176, 230);
+    font-size: 30px;
+    font-weight: 900;
+    animation: colorchange 2.5s linear infinite;
+}
+@keyframes colorchange{
+    0%   {color:rgb(42, 176, 230);}
+    50%  {color:yellow;}
+    80%  {color:green;}
+    100%  {color:rgb(42, 176, 230);}
+}
+.money .card .mform .fname{
+   box-shadow: 0px 0px 3px 2px black;
+    border: 45px;
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px;
+}
+.money .card .mform .email{
+    box-shadow: 0px 0px 3px 2px black;
+    border: 45px;
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px;
+}
+.money .card .mform .total{
+    display: flex;
+    box-shadow: 0px 0px 3px 2px black;
+    border: 45px;
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px;
+}
+.money .card .mform .btn{
+    color: white;
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+     padding: 8px 20px;
+     border-radius: 5px;
+     font-size: 20px;
+     font-weight: 800;
+     box-shadow: 0px 0px 3px  3px rgb(42, 176, 230);
+     transform: translateY(4px);
+}
+.money .card .mform .btn:hover{
+    transform: scale(1.03);
+     background-color: brown;
+}
+.share{
+    background-color: whitesmoke;
+    display: flex;
+    height: 25vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.share .sharelinks ul{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 20px;
+   font-weight: 700;
+   list-style-type: none;
+}
+.share .sharelinks .title{
+    color :black;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+.share .sharelink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; 
+}
+.share  .sharelink .fb{
+    color:  rgb(47, 161, 214);
+    font-size: 50px;
+    font-weight: 600;
+    display: flex;
+    margin-right: 500px;
+    margin-top: 15px;
+}
+.share .sharelink .insta{
+    margin-top: 15px;
+    color: rgb(223, 59, 182);
+    font-size: 50px;
+    font-weight: 600;
+    display: flex;
+    margin-right: 500px
+}
+.share .sharelink .tweet{
+    margin-top: 15px;
+    color:#1DA1F2;
+    font-size: 50px;
+    font-weight: 600;
+    display: flex;
+}
+.share .sharelink .fb:hover{
+    transform: scale(1.2);
+    animation: fb 2s linear infinite;
+}
+.share .sharelink .insta:hover{
+    transform: scale(1.2);
+    animation: insta 2s linear infinite;
+}
+.share .sharelink .tweet:hover{
+    transform: scale(1.2);
+    animation: tweet 2s linear infinite;
+}
+
+@keyframes fb {
+    0%   {color:rgb(47, 161, 214)}
+    25%  {color:rgb(81, 178, 216);}
+    50%  {color:blue;}
+    75%  {color:greenyellow;}
+    80% {color:violet;}
+    100%{color:rgb(47, 161, 214);}
+  }
+  @keyframes insta {
+    0%   {color:rgb(223, 59, 182);}
+    25%  {color:rgb(250, 150, 250);}
+    50%  {color:rgb(85, 171, 221);}
+    75%  {color:rgb(103, 219, 57);}
+    80% {color:rgb(238, 128, 88);}
+    100%{color:rgb(223, 59, 182);}
+  }
+  @keyframes tweet {
+    0%   {color:#1DA1F2;}
+    25%  {color:rgb(128, 189, 247);}
+    50%  {color:rgb(120, 248, 248);}
+    75%  {color:greenyellow;}
+    100% {color:cyan;}
+  }
+.scrollbutton{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    height: 40px;
+    width: 40px;
+    background-color: brown;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(50%);
+    cursor: pointer;
+}
+@media screen and (max-width:768px){
+    .about .cardRow{
+        flex-direction: column;
+    }
+    .navbar .navlinks ul{
+        display:block;
+    }
+    .money .card .mform{
+        flex-direction: column;
+    }
+     .donation .overlay{
+              width: 100%;
+              height: 150vh;
+          }
+          .donation  .overlay .dTitle{
+              font-size: 28px;
+              font-weight: 500;
+
+          }
+          .donation .overlay .dText{
+              margin-top: 20px;
+              font-size: 18px;
+              font-weight: 450;
+          }
+         .donation .money .overlay .card{
+              box-shadow: 0px 0px 3px 2px black;
+              width: 100%;
+              height: 80vh;
+              top: 100px;
+    @media screen and (max-width: 640px) {
+        .navbar {
+          padding: 0px 30px;
+        }
+        .navbar .navlinks ul{
+            display:block 2px;
+            padding: 0px 2px;
+            justify-content: center;
+            font-size: 12.5px;
+            font-weight: 700;
+            
+        }
+        .navbar .logo{
+            font-size: 19px;
+            margin-right: 10px;
+        }
+        .about .cardRow{
+            flex-direction: column;
+            padding: 10px 23px;
+        }
+        .about .cardRow .card{
+            box-shadow: 0px 0px 3px 2px cyan;
+        }
+        .mainline .overlay .title {
+          color:white;
+          font-size: 32px;
+          font-weight: 800;
+        }
+        .mainline .overlay .text {
+          color: White;
+          font-size: 18px;
+        }
+        .mainline .overlay .button {
+            font-size: 14px;
+            font-weight: 900;
+            padding: 10px 20px;
+            line-height: 30px;
+            text-align: center;
+            
+          }
+          .donation .overlay{
+              width: 100%;
+              height: 150vh;
+          }
+          .donation  .overlay .dTitle{
+              font-size: 28px;
+              font-weight: 500;
+
+          }
+          .donation .overlay .dText{
+              margin-top: 20px;
+              font-size: 18px;
+              font-weight: 450;
+          }
+         .donation .money .overlay .card{
+              box-shadow: 0px 0px 3px 2px black;
+              width: 100%;
+              height: 80vh;
+              top: 100px;
+          }
+        .section {
+          padding: 30px 30px;
+        }
+        .title {
+          margin-top: 30px;
+        }
+        .booking .text {
+          text-align: justify;
+        }
+      }
+}
+

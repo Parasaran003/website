@@ -1,0 +1,330 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+/* boiler plate for css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --bizgreen:#189ec0;
+    --bizaccent:#171717;
+    --bizwhite:#f9f9f9;
+    --bizbutton:#682dacd3;
+    
+}
+body{
+     font-family: 'Google Sans', sans-serif;
+}
+.business{
+    font-size: medium;
+    color: #189ec0;
+}
+.section{
+    padding: 50px 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.navbar{
+    height: 12vh;
+    background-color: var(--bizgreen);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    position: fixed;
+    z-index: 1000;
+
+}
+.navbar .logo{
+    color: indigo;
+     font-size: 36px;
+     font-weight: 1000;
+}
+.navbar .navlinks ul{
+    width: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.navbar .navlinks {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.navbar .navlinks .navlink{
+    font-size: 18px;
+    font-weight: 600;
+}
+.navbar .navlinks .navlink:hover{
+    color:var(--bizaccent);
+}
+.hero{
+    width: 100%;
+    height: 88vh;
+    background-image: url(https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position: inherit;
+}
+.hero .overlay {
+    background-color: #0000007a;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero .overlay .title{
+    color: var(--bizwhite);
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    animation: colorchange 3s linear infinite;
+}
+@keyframes colorchange{
+    0% {
+        color: blue;
+      }
+      10% {
+        color: #8e44ad;
+      }
+      20% {
+        color: #1abc9c;
+      }
+      30% {
+        color: #d35400;
+      }
+      40% {
+        color: blue;
+      }
+      50% {
+        color: #34495e;
+      }
+      60% {
+        color: blue;
+      }
+      70% {
+        color: #2980b9;
+      }
+      80% {
+        color: #f1c40f;
+      }
+      90% {
+        color: #2980b9;
+      }
+      100% {
+        color: pink;
+      }
+}
+.hero .overlay .text{
+    font-size: 23px;
+    font-weight: 600;
+    color: var(--bizwhite);
+    margin-bottom: 20px;
+}
+.button{
+    background-color:transparent;
+    box-shadow: 0px 0px 3px  2px white;
+    padding: 10px 25px;
+    border-radius: 4px;
+    font-size: 23px;
+    font-weight: 800;
+}
+.button:hover {
+    background-color:#682dacd3;
+    transform:scale(1.03);
+}
+.services .cardRow{
+    display: flex;
+    width: 100%;
+   justify-content: space-between;
+   align-content: space-between;
+   align-items: center;
+    align-items: stretch;
+}
+.section .h2 .title{
+    font-weight:1000;
+}
+.services .cardRow .card{
+    box-shadow: 0px 0px 5px #424242c7;
+    margin: 8px;
+    padding: 20px;
+    border-radius: 4px;
+    transition: all 0.1s ease-in-out;
+}
+.services .cardRow .card .cardIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 60px;
+}
+.services .card .cardIcon.a .material-icons{
+    font-size: 40px;
+}
+.services .card:hover .cardIcon.a{
+    animation: bounce 1s linear infinite;
+}
+.services .card .cardIcon.s .material-icons{
+    font-size: 40px;
+}
+.services .card:hover .cardIcon.s{
+    animation: spin 1s linear infinite;
+}
+.services .card .cardIcon.h .material-icons{
+    font-size: 40px;
+}
+.services .card:hover .cardIcon.h{
+    animation: Bounce 1s linear infinite;
+}
+.servics .carRow .card .span{
+    font-size: 52px;
+}
+@keyframes bounce{
+    0% {
+        transform: translateY(0%);
+        color: blueviolet;
+    }
+    50%{
+        transform: translateY(-50%);
+        color: chartreuse;
+    }    
+    100% {
+        transform: translateY(0%);
+        color: cornflowerblue;
+    }
+}
+@keyframes spin{
+    from{
+        transform: rotateZ(0deg);
+        color: gold;
+    }
+    to{
+        transform: rotateZ(360deg);
+        color: silver;
+    }
+}
+@keyframes Bounce{
+    0% {
+        color: cyan;
+    }
+    50%{
+        color:yellow;
+    }    
+    100% {
+        color: green;
+    }
+}    
+.services .cardRow .card .cardTitle{
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 10px;
+    color:var(--bizblack);
+}
+.services .title{
+    color: rgb(108, 17, 173);
+    font-size: 38px;
+    font-weight: 800;
+    margin-left: 100px;
+}
+
+
+.services .cardRow .card .cardContent{
+    text-align: justify;
+    color:var(--bizgreen);
+}
+.services .cardRow .card:hover{
+    transform: scale(1.03);
+}
+.services .cardRow .card:hover .cardIcon{
+    color:var(--bizbutton);
+}
+.booking{
+    background-color: var(--bizgreen);
+    color: var(--bizwhite);
+}
+.booking .title{
+    color: indigo;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+.booking .text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.scrollbutton{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    height: 40px;
+    width: 40px;
+    background-color: #682dacd3;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(50%);
+    cursor: pointer;
+
+}
+/*MOBILE RESPONSE*/
+/* Responsive Design */
+
+/* we use media queries to make our make our websites responsive */
+
+/* PC first */
+/* @media screen and (max-width:768px) - tablet size */
+/* @media screen and (max-width:640px) - mobile size */
+
+/* mobile first */
+/* @media screen and (min-width:768px) - tablet size */
+/* @media screen and (min-width:640px) - mobile size */
+@media screen and (max-width:768px){
+    .services .cardRow{
+        flex-direction: column;
+    }
+    .navbar .navlinks ul{
+        display:block;
+    }
+    @media screen and (max-width: 640px) {
+        .navbar {
+          padding: 0px 30px;
+          display: block;
+        }
+        .hero .overlay .title {
+          color: var(--bizWhite);
+          font-size: 32px;
+          font-weight: 800;
+          margin-bottom: 10px;
+        }
+        .hero .overlay .text {
+          color: var(--bizWhite);
+          font-size: 18px;
+        }
+        .section {
+          padding: 30px 30px;
+        }
+        .title {
+          margin-top: 30px;
+        }
+        .booking .text {
+          text-align: justify;
+        }
+      }
+}
