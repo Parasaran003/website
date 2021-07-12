@@ -318,6 +318,9 @@ body a{
     transform: scale(1.05);
 }
 @media screen and (max-width:868px){
+    body{
+        overflow-x:hidden;
+    }
     .illus{
         top: 25px;
         width: 270px;
@@ -473,6 +476,9 @@ body a{
 }
 }
 @media screen and (max-width:648px){
+    body{
+        overflow-x:hidden;
+    }
     .illus{
         top: 15px;
         width: 200px;
