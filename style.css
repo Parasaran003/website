@@ -334,6 +334,9 @@ body a{
         margin-left: 0;
         padding: 50px 30px;
     }
+    .navbar .navlinks .navlink.contact{
+        display: none;
+    }
     .navbar{
         position: fixed;
         bottom: 0;
@@ -476,6 +479,9 @@ body a{
 }
 }
 @media screen and (max-width:640px){
+    .navbar .navlinks .navlink.contact{
+        display: none;
+    }
     body{
         overflow-x:hidden;
     }
