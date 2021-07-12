@@ -26,7 +26,8 @@ html{
 body{
     background-color: #011627;
     color: var(--light);
-    overflow-x: hidden; 
+    overflow-x: hidden;
+    overflow-y: scroll; 
 }
 body a{
     color: var(--light);
