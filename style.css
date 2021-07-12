@@ -475,7 +475,7 @@ body a{
     transform: scale(1.05);
 }
 }
-@media screen and (max-width:648px){
+@media screen and (max-width:640px){
     body{
         overflow-x:hidden;
     }
